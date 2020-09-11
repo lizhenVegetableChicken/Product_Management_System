@@ -1,0 +1,29 @@
+/**控制外部**/
+QTreeView:branch:has-siblings:!adjoins-item {
+  border-image: url(./Images/11.png) 0;
+}
+/**控制内部最后一个**/
+QTreeView:branch:!has-siblings:adjoins-item {
+  border-image: url(./Images/11.png) 0;
+}
+/**控制内部除去最后一个**/
+QTreeView:branch:has-siblings:adjoins-item {
+  border-image: url(./Images/11.png) 0;
+}
+QTreeWidget {
+    font-size: 10pt;
+}
+
+QTreeWidget:item {
+     height: 50px;
+     border: 1px solid rgb(20,100,170);
+     font-size: 25px;
+    /** padding-left: 20px;**/
+     }
+
+
+QTreeWidget:item:hover {
+     background-color: rgb(20,100,170);
+     color:white;
+     }
+
